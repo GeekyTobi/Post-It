@@ -1,94 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<style>
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {float:left;width:50%}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    color: #000;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}
-</style>
 <head>
 	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -96,74 +7,72 @@ button {
 <body>
 <div id="Container">
 	<div class = "header">
-		POST IT
-		<div class = "notification">
-			<a href="index.html">Log Out</a>  
-		</div>
-        <div id="search">
-            <input type="search" name="searchMembers" value="Search members ...">
+        POST IT
+        <div class = "button">
+            <a href="index.html">Sign In</a>  
         </div>
-	</div>
-
-    <!---activity section -->
-    <div id="left">
-        <p>Action</p>
-
-        <div class="activity">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
-                Create Group
-            </button>
-            
-        </div>
-        <div class="activity">
-            <a href="#">Add Member</a>
-        </div>
-        <br/>
-        <p>Added Groups</p>
-        <div class="activity">
-            <a href="group1.html">Group 1</a>
-        </div>
-        <div class="activity">
-            <a href="group2.html"> Group 2</a>
-        </div>
-        <div class="activity">
-            <a href="group3.html"> Group 3</a>
+        <div class = "button">
+             <a href="main.html">Sign Up</a> 
         </div>
     </div>
-</div>
 
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="container">
-      <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+    <!---Register -->
+    <div id = "register">
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="username">User Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="username" name="username">
+                </td>
+            </tr>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="text" id="email" name="email">
+                </td>
+            </tr>
 
-      <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      <input type="checkbox" checked="checked"> Remember me
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <tr>
+                <td>
+                    <label for="pword">Password:</label>
+                </td>
+                <td>
+                    <input type="text" id="pword" name="pword">
+                </td>
+            </tr>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
+            <tr>
+                <td>
+                    <label for="conpword">Confirm Password:</label>
+                </td>
+                <td>
+                    <input type="text" id="conpword" name="conpword">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fname">Password:</label>
+                </td>
+                <td>
+                    <input type="text" id="password" name="password">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <button id="regbtn">
+        Register now
+    </button>
+    
     </div>
-  </form>
+    
 </div>
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
 </body>
 </html>
