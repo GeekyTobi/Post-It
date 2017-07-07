@@ -1,0 +1,40 @@
+body{
+	margin: 20px;
+	color: #fff;
+	font-family: arial;
+}
+
+.button{
+	color: #fff;
+	background: #00b0ff;
+	cursor: pointer;
+	outline: none;
+}
+
+.modal{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
+.modal-content{
+	 width: 400px;
+	 height: 250px;
+	 background:#81d4fa;
+	 margin: 150px auto;
+}
+
+.modal-header{
+	width: 400px;
+	height: 40px;
+	padding: 10px;
+	font-weight: bold;
+	background: #00b0ff;
+}
