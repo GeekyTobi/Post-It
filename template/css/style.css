@@ -5,6 +5,7 @@ body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+
 #container{
 	width: 100%;	
 }
@@ -22,9 +23,9 @@ body{
 	border: 2px solid #73AD21;
 	float: right;
 	border-radius: 5px;
-	margin-left: 5px; 				/*5%;*/
+	margin-left: 1%; 				/*5%;*/
 	margin-top: -10px;				/*-2%;*/
-	padding: 5px;				/*1%;*/
+	padding: 1%;				/*1%;*/
 }
 
 
@@ -72,7 +73,7 @@ body{
   }
 
 
-  #login{
+ #login{
 	border-radius: 30px;
 	padding: 30px;
 	margin: 20px;
@@ -147,25 +148,31 @@ body{
 
 .notification {
     border-radius: 25%;
-    background: #73AD21;
-	display: block;
+    background: red;
 	border: 2px solid white;
 	float: right;
-	margin-left: 5px; 				/*5%;*/
-	margin-top: -10px;				/*-2%;*/
-	padding: 5px;	
+	margin-left: 1%; 				/*5%;*/
+	margin-top: -1%;				/*-2%;*/
+	padding: 1%;	
 } 
 
 
 .notification a{
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
 }
 
-.notify{
+.notification a:hover{
+	text-decoration: none;
+	color: blue;
+	font-weight: bold;
+}
+
+/*.notify{
 	background-color: red;
 	width: 20px;
-}
+}*/
 
 /*#btn{
 	width: 100%
@@ -194,10 +201,10 @@ body{
 }
 
 .activity{
-	margin: 10px;
+	margin: 1%;
 	background-color: blue;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 2%;
 	text-align: center;
 	color: white;
 	display: block;
@@ -237,6 +244,7 @@ body{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    color: black;
   }
 
 /*Create*/
@@ -292,6 +300,7 @@ body{
 }
 
 .msgcontainer{
+	width: 75%;
 	padding: 1%;
 	clear: both;
 	border-radius: 15px 50px 30px 5px;
@@ -299,6 +308,18 @@ body{
 	margin-bottom: 3%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.msgcontaineread{
+	width: 75%;
+	padding: 1%;
+	clear: both;
+	border-radius: 15px 50px 30px 5px;
+	margin-left: 3%;
+	margin-bottom: 3%;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .read {
 	text-align: right;
 	color: red;
@@ -316,14 +337,13 @@ body{
 }
 
 .send{
-	width: 100%;
-	border:1px solid red;
+	width: 70%;
 	display: inline-block;
 	padding: 1%;
 
 }
 .send table{
-	width: 100%;
+	width: 70%;
 
 }
 .send td{
@@ -331,7 +351,7 @@ body{
 }
 
 .send textarea {
-	width: 50px;
+	width: 400px;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;

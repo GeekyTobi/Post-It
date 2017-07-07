@@ -1,168 +1,103 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<style>
-/* Full-width input fields */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {float:left;width:50%}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    color: #000;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
-}
-</style>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <title>Home Page</title>
+    <title>Group1</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 </head>
 <body>
-<div id="Container">
-	<div class = "header">
-		POST IT
-		<div class = "notification">
-			<a href="index.html">Log Out</a>  
-		</div>
-        <div id="search">
-            <input type="search" name="searchMembers" value="Search members ...">
+    <div id="Container">
+        <div class = "header">
+            POST IT
+            <div class = "notification">
+                <a href="index.html">Log Out</a>  
+            </div>
+            <div class = "notification">
+                <a href="index.html">Search</a>  
+            </div>
+            
+            <div id="search">
+                <input type="search" name="searchMembers" value="Search members ...">
+            </div>
         </div>
-	</div>
 
-    <!---activity section -->
-    <div id="leftbar">
-        <p>Action</p>
+        <!---activity section -->
+        <div id="leftbar">
+            <p>Action</p>
+            <!-- <button class="activity" id ="mybtn">
+                Create Group
+            </button> -->
+            <div class="activity">
+                <a href="">Create Group</a>
+            </div>
+            <div class="activity">
+                <a href="">Add Member</a>
+            </div>
+            <br/>
+            <p>Added Groups</p>
+            <div class="activity">
+                <a href="group1.html">Group 1</a>
+            </div>
+            <div class="activity">
+                <a href="group2.html"> Group 2</a>
+            </div>
+            <div class="activity">
+                <a href="group3.html"> Group 3</a>
+            </div>
+        </div>
 
-        <div class="activity">
-            <a href="">Create Group</a>
-        </div>
-        <div class="activity">
-            <a href="">Add Member</a>
-        </div>
-        <br/>
-        <p>Added Groups</p>
-        <div class="activity">
-            <a href="">Group 1</a>
-        </div>
-        <div class="activity">
-            <a href=""> Group 2</a>
-        </div>
-        <div class="activity">
-            <a href=""> Group 3</a>
+        <div class ="rightbar">
+                <div class="msgcontaineread">
+                    <p>Hi have you seen me today?</p>
+                </div>
+            
+
+            <div class="msgcontainer">
+                <p>No I haven't</p>
+            </div>
+
+            <div class="msgcontaineread">
+                <p>No I haven't</p>
+            </div>
+
+            <div class="msgcontainer">
+                <p>No I haven't</p>
+            </div>
+
+            <div class="msgcontaineread">
+                <p>No I haven't</p>
+            </div>
+
+            <div class="msgcontainer">
+                <p>No I haven't</p>
+            </div>
+
+            <div class="send">
+                <table>
+                    <tr>
+                        <td><textarea>Enter message here</textarea></td>
+                       <!--  <td>
+                            <select name="priority">
+                            <option value="Normal">Normal</option>
+                            <option value="Urgent">Urgent</option>
+                            <option value="Critical">Critical</option>
+                            <option value="audi">Audi</option>
+                            </select>
+                        </td> -->
+                        <td>
+                            <!-- <button class="activity" id ="mybtn"> -->
+                            <button class="activity" id ="mybtn">
+                                Send
+                            </button>
+                        </td>
+                    </tr>
+                </table>   
+            </div>
         </div>
     </div>
-
-    <div class ="rightbar">
-        <div class="msgcontainer">
-            <p>Hi have you seen me today?</p>
-        </div>
-
-        <div class="msgcontainer">
-            <p>No I haven't</p>
-        </div>
-        <div class="msgcontainer">
-            <p>No I haven't</p>
-        </div>
-        <div class="msgcontainer">
-            <p>No I haven't</p>
-        </div>
-        <div class="msgcontainer">
-            <p>No I haven't</p>
-        </div>
-        <div class="msgcontainer">
-            <p>No I haven't</p>
-        </div>
-        <div class="msgcontainer">
-        </div>
-        <div class="msgcontainer">
-        </div>
-        <div class="msgcontainer">
-        </div>
-        <textarea>Enter message here</textarea>
-    </div>
-
-
-
-</div>
 
 </body>
 </html>
